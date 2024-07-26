@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { UserTask } from './task.model'
 
 @Component({
   selector: 'app-task',
@@ -8,7 +9,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './task.component.css'
 })
 export class TaskComponent {
-  @Input({required:true}) user_id!:string;
-  @Input({required:true}) user_name!:string;
+  @Input({required:true}) user_task!:UserTask;
 
 }
